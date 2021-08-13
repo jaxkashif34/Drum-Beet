@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Handlee|Pacifico);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Main-Container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.Drum-Container {
+    background-color: aqua;
+    position: relative;
+    height: 100vh;
+    min-width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .key-plate {
+        position: absolute;
+    }
+    .key {
+        transition: all ease-in-out 0.042s;
+        position: absolute;
+        background-color: rgb(43, 43, 43);
+        font-size: 1.5em;
+        height: 35px;
+        width: 33px;
+        text-align: center;
+        color: wheat;
+        outline: none;
+        cursor: pointer;
+        box-shadow: 0px -4px 1px 5px rgb(219, 219, 219);
+        border-radius: 50%;
+    }
+    .imageFlatDiv {
+        width: 180px;
+        height: 50px;
+        right: 25.4%;
+        top: 33.1%;
+        transition: all ease-in-out 0.042s;
+    }
+    .imageRotateDiv {
+        top: 23.9%;
+        left: 26.4%;
+        width: 180px;
+        height: 50px;
+        transform: rotate(-7.2deg);
+        transition: all ease-in-out 0.042s;
+    }
+    .Drum-Kit-img img {
+        width: 650px;
+        height: 550px;
+    }
+    .J-word {
+        top: 52.7%;
+        right: 35%;
+    }
+    .B-word {
+        top: 65%;
+        right: 46%;
+    }
+    .V-word {
+        top: 65%;
+        left: 46%;
+    }
+    .H-word {
+        top: 46%;
+        right: 43%;
+    }
+    .G-word {
+        top: 44%;
+        left: 43%;
+    }
+    .F-word {
+        top: 63%;
+        left: 32.7%;
+    }
+    .E-word {
+        top: 22%;
+        left: 28%;
+    }
+    .R-word {
+        top: 22.5%;
+        left: 37%;
+    }
+    .I-word {
+        top: 32.5%;
+        right: 37.6%;
+    }
+    .K-word {
+        top: 32.5%;
+        right: 27.6%;
+    }
+}
+.BtnDetails {
+    font-family: "Pacifico", cursive;
+    color: wheat;
+    background: #111;
+    height: 100vh;
+    min-width: 20vw;
+    h1 {
+        text-align: center;
+        font-size: 35px;
+    }
+    hr {
+        margin: 15px auto;
+    }
+    ul {
+        width: 100%;
+        height: 84%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .example_d {
+            color: #20bf6b !important;
+            text-transform: uppercase;
+            background: #ffffff;
+            padding: 5px 25px;
+            border: 4px solid #20bf6b !important;
+            border-radius: 6px;
+            display: inline-block;
+            transition: all 0.3s ease 0s;
+            margin-right: 5px;
+            &:hover {
+                color: #494949 !important;
+                border-radius: 50px;
+                border-color: #494949 !important;
+                transition: all 0.3s ease 0s;
+            }
+        }
+        .btnsSounds {
+            margin: 5px 0px 5px 10px;
+            font-size: 20px;
+        }
+        .sound {
+            margin-left: 20px;
+            font-family: "Courgette", cursive;
+        }
+    }
+}
+
+.btnList {
+    list-style: none;
+}
+.playing {
+    transform: scale(1.12);
+}

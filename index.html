@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./Files/Drum.css">
+    <!-- Main JS File -->
+    <script src="./Files/Drum.js" defer></script>
+    <!-- Local Jquery file-->
+    <!-- <script src="../JQuery - Copy/jquery-ShortHand.js"></script> -->
+    <title>JS Drum With Sounds</title>
+</head>
+
+<body>
+    <div class="Main-Container">
+        <div class="Drum-Container">
+            <img class="imageRotateDiv key-plate" id="rotatePlate" src="./DrumSounds/Drum Plate rotate.png"
+                alt="Image Rotae">
+            <img class="imageFlatDiv key-plate" id="flatPlate" src="./DrumSounds/Drum Plate flat Straight.png"
+                alt="Image Flat">
+            <div data-Key="74" class="key J-word">
+                <kbd>J</kbd>
+            </div>
+            <div data-Key="66" class="key B-word">
+                <kbd>B</kbd>
+            </div>
+            <div data-Key="86" class="key V-word">
+                <kbd>V</kbd>
+            </div>
+            <div data-Key="72" class="key H-word">
+                <kbd>H</kbd>
+            </div>
+            <div data-Key="71" class="key G-word">
+                <kbd>G</kbd>
+            </div>
+            <div data-Key="70" class="key F-word">
+                <kbd>F</kbd>
+            </div>
+            <div data-Key="69" class="key E-word">
+                <kbd>E</kbd>
+            </div>
+            <div data-Key="82" class="key R-word">
+                <kbd>R</kbd>
+            </div>
+            <div data-Key="73" class="key I-word">
+                <kbd>I</kbd>
+            </div>
+            <div data-Key="75" class="key K-word">
+                <kbd>K</kbd>
+            </div>
+            <div class="Drum-Kit-img">
+                <img src="./DrumSounds/Drum Band.png" alt="Drum-Kit-img">
+            </div>
+        </div>
+        <div class="BtnDetails">
+            <h1>Key Mapping</h1>
+            <hr>
+            <ul class="btnList">
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">E</kbd>
+                    <span class="sound">Crash</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">R</kbd>
+                    <span class="sound">Ride</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">F</kbd>
+                    <span class="sound">Floor tom</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">G</kbd>
+                    <span class="sound">Mid tom</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">H</kbd>
+                    <span class="sound">High tom</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">v</kbd>
+                    <kbd class="kbdBtn example_d">b</kbd>
+                    <span class="sound">Kick</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">j</kbd>
+                    <span class="sound">Snare</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">i</kbd>
+                    <span class="sound">Hi-Hat Open</span>
+                </li>
+                <li class="btnsSounds">
+                    <kbd class="kbdBtn example_d">K</kbd>
+                    <span class="sound">Hi-Hat Closed</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <audio data-Key="74" src="./DrumSounds/74(keyCode J).wav"></audio>
+    <audio data-key="66" src="./DrumSounds/66(keyCode b).wav"></audio>
+    <audio data-key="86" src="./DrumSounds/86(keyCode v).wav"></audio>
+    <audio data-key="72" src="./DrumSounds/72(keyCode h).wav"></audio>
+    <audio data-key="71" src="./DrumSounds/71(keyCode g).wav"></audio>
+    <audio data-key="70" src="./DrumSounds/70(keyCode f).wav"></audio>
+    <audio data-key="69" src="./DrumSounds/69(keyCode e).wav"></audio>
+    <audio data-key="82" src="./DrumSounds/82(keyCode r).wav"></audio>
+    <audio data-key="73" src="./DrumSounds/73(keyCode i).wav"></audio>
+    <audio data-key="75" src="./DrumSounds/75(keyCode k).wav"></audio>
+</body>
+
+</html>
